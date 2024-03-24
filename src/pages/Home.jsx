@@ -1,13 +1,17 @@
 // import Navbar from "../components/Navbar";
 
+import wave from '../assets/wave.svg'
+
+import Hero from "../components/Hero";
+
 const Home = () => {
     return (
-        <div>
-            <div >
-            {/* <Navbar></Navbar> */}
-            </div>
-            <h1>Home Page</h1>
+        <div className="min-h-[calc(100vh-120px)] flex flex-col items-center justify-center">
+            <Hero></Hero>
+           
+            <img className='absolute bottom-[50px] w-full' src={wave} alt="" />
         </div>
+        
     );
 };
 
